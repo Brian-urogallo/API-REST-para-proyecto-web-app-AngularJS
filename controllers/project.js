@@ -125,7 +125,7 @@ var controller ={
       var projectId = req.params.id;
       var fileName = 'Imagen no subida...';
 
-      if(req.files){
+      if(req.file){
          var filePath = req.file.path;
          var fileSplit = filePath.split('\\');
          var fileName = fileSplit[1];
